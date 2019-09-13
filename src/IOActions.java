@@ -67,6 +67,12 @@ public class IOActions extends AnAction {
                     "                } catch (IOException e1) {\n" +
                     "                    e1.printStackTrace();\n" +
                     "                }";
+        }else if (this.toString().contains("Read Line of file")){
+            code = "try { Stream<String> all_lines = Files.lines(Paths.get(filename));\n" +
+                    "     String line = all_lines.skip(lineToRead).findFirst().get();\n" +
+                    "} catch (IOException e) {\n" +
+                    "   e.printStackTrace();\n" +
+                    "}";
         }
         String finalCode = code;
         WriteCommandAction.runWriteCommandAction(project, () ->

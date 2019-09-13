@@ -27,6 +27,7 @@
             <action id="read_complete" class="IOActions" text="Read whole file" description="Code to read whole file"/>
             <action id="read" class="IOActions" text="Read file" description="Code to read file"/>
             <action id="write" class="IOActions" text="Write to file" description="Code to write into a file"/>
+            <action id="read_line" class="IOActions" text="Read Line of file" description="Code to read one specific line"/>
         </group>
         <group id="UIComponents" text="UI Components" description="Important UI-Components Snippets" popup="true">
             <add-to-group group-id="plugin_menu" anchor="last"/>
